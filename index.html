@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>r/CBSE // CoC</title>
+  <meta property="og:title" content="r/CBSE // Code of Conduct">
+  <meta property="og:description" content="Community rules and guidelines for r/CBSE.">
+  <meta property="og:image" content="assets/discordbanner.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="r/CBSE // Code of Conduct">
+  <meta name="twitter:description" content="Community rules and guidelines for r/CBSE.">
+  <meta name="twitter:image" content="assets/discordbanner.png">
+  <link rel="icon" type="image/png" href="assets/64x64.png" sizes="64x64">
+  <link rel="shortcut icon" type="image/png" href="assets/64x64.png">
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('cbse-theme');
+        var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored ? stored : (systemDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-title">
+      <a href="https://reddit.com/r/CBSE">r/CBSE</a> <span>// Code of Conduct</span>
+    </div>
+
+    <div class="nav-actions">
+      <button type="button" class="nav-btn" id="asideToggle" aria-label="Toggle community panel">
+        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="15" y1="3" x2="15" y2="21"></line>
+        </svg>
+      </button>
+      <button type="button" class="nav-btn" id="themeToggle" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" width="15" height="15" stroke="currentColor" stroke-width="1.75" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        </svg>
+      </button>
+      <button type="button" class="nav-link" id="menuLink" aria-expanded="false" aria-controls="sidebar">[menu]</button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-search">
+        <input type="search" id="rulesSearch" placeholder="filter rules </>" autocomplete="off" spellcheck="false" aria-label="Filter rules">
+      </div>
+      <nav id="sidenav" aria-label="Rules index">
+        <a href="#scope" class="nav-link">Scope</a>
+        <a href="#enforcement" class="nav-link">Enforcement &amp; Discretion</a>
+
+        <details>
+          <summary>Rule 1 - Civil Discourse</summary>
+          <div class="sub">
+            <a href="#rule-1-1">1.1 Violence &amp; serious crimes</a>
+            <a href="#rule-1-2">1.2 Inclusivity &amp; hateful conduct</a>
+            <a href="#rule-1-3">1.3 Remember the human</a>
+            <a href="#rule-1-4">1.4 Harassment &amp; bullying</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rule 2 - No Disruption</summary>
+          <div class="sub">
+            <a href="#rule-2-1">2.1 Community environment</a>
+            <a href="#rule-2-2">2.2 Content manipulation</a>
+            <a href="#rule-2-3">2.3 Spam &amp; trolling</a>
+            <a href="#rule-2-4">2.4 Real-life disruption</a>
+            <a href="#rule-2-5">2.5 No CFBR</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rule 3 - Relevance &amp; Quality</summary>
+          <div class="sub">
+            <a href="#rule-3-1">3.1 Relevance</a>
+            <a href="#rule-3-2">3.2 Quality</a>
+            <a href="#rule-3-3">3.3 Reposts</a>
+            <a href="#rule-3-4">3.4 Old content</a>
+            <a href="#rule-3-5">3.5 Trends</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rule 4 - Prohibited Content</summary>
+          <div class="sub">
+            <a href="#rule-4-1">4.1 PII &amp; illegal media</a>
+            <a href="#rule-4-2">4.2 Explicit media</a>
+            <a href="#rule-4-3">4.3 Self-promotion</a>
+            <a href="#rule-4-4">4.4 Fundraisers &amp; surveys</a>
+            <a href="#rule-4-5">4.5 Political / religious</a>
+          </div>
+        </details>
+
+        <a href="#rule-5" class="nav-link">Rule 5 - Language Policy</a>
+
+        <details>
+          <summary>Rule 6 - Titles &amp; Flair</summary>
+          <div class="sub">
+            <a href="#rule-6-1">6.1 Titling</a>
+            <a href="#rule-6-2">6.2 Flair &amp; roles</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rule 7 - Meta &amp; Social Media</summary>
+          <div class="sub">
+            <a href="#rule-7-1">7.1 Meta content</a>
+            <a href="#rule-7-2">7.2 Other social media</a>
+          </div>
+        </details>
+
+        <details>
+          <summary>Rule 8 - Misinformation</summary>
+          <div class="sub">
+            <a href="#rule-8-1">8.1 Fact-check first</a>
+            <a href="#rule-8-2">8.2 Cite your sources</a>
+          </div>
+        </details>
+
+        <a href="#rule-9" class="nav-link">Rule 9 - Appeals</a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <section id="scope">
+        <h2>Scope</h2>
+        <p>r/CBSE is a student-first community for students to connect, discuss, and help each other out. Beyond academics, we welcome off-topic threads, memes, shitposts, and rants, as long as they adhere to the rules outlined in this code of conduct.</p>
+        <p>r/CBSE is an explicitly inclusive space welcoming students of all backgrounds, identities, genders, and orientations. Inclusivity and mutual respect are fundamental principles here, not topics open for debate.</p>
+        <p><strong>Who can participate:</strong> Anyone currently studying in CBSE, or who has ever studied in CBSE, can participate. Students from other boards are welcome to share their experiences. There are no restrictions beyond the appropriateness of the discussion.</p>
+        <p>Hate speech is not protected as free expression here. The rules below define what is and isn't acceptable. Please also read Reddit's <a href="https://www.redditinc.com/policies/user-agreement" target="_blank" rel="noopener noreferrer">User Agreement</a> and <a href="https://www.redditinc.com/policies/content-policy" target="_blank" rel="noopener noreferrer">Content Policy</a>, and Discord's <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>, before reading this document.</p>
+        <blockquote><p>"Content" means anything submitted to r/CBSE - posts, comments, flair (Reddit), and messages, emoji, stickers, media, or nicknames (Discord).</p></blockquote>
+      </section>
+
+      <section id="enforcement">
+        <h2>Enforcement &amp; moderator discretion</h2>
+        <p>Every rule below is enforced at moderator discretion. How hard the hammer comes down depends on how bad it was and whether the person's done it before - intent is not a mitigating factor. "I didn't mean it that way" doesn't reduce a violation's severity.</p>
+        <ul>
+          <li>First-time, low-severity issues (an off-topic comment, a borderline-quality post) are typically met with content removal or a warning, not a ban.</li>
+          <li>Repeated or moderate issues escalate to timeouts or temporary bans.</li>
+          <li>Severe or malicious violations (hate speech, doxxing, harassment, brigading, and similar) can result in an immediate temporary or permanent ban, requiring no prior warning.</li>
+          <li>Moderators are not obligated to justify the intensity of an action taken in good faith, but users may appeal via the process in Rule 9.</li>
+        </ul>
+        <blockquote><p>This section is the single source of truth on discretion - individual rules no longer carry their own conflicting notes on it.</p></blockquote>
+      </section>
+
+      <section id="rule-1">
+        <h2>Rule 1 - Be nice and engage in civil discourse</h2>
+
+        <article id="rule-1-1">
+          <h3><span class="num">1.1</span>Violence, suicide &amp; serious crimes</h3>
+          <ol>
+            <li>Encouraging, glorifying, or calling for violence against any individual or group (including animals) is prohibited. Inciting violence based on identity or vulnerability, threatening any user, or justifying rape, death, or similar crimes against any person - offline or online - is treated as a severe violation.</li>
+            <li>Promotion of suicide or self-harm, or jokes around such matters, is not permitted.</li>
+            <li>Jokes involving serious crimes (assault, death, etc.), or inappropriate comments on minors, are not permitted.</li>
+            <li>Content that mocks or makes light of pedophilia, CSA, or similarly heinous criminal acts - directly or indirectly, including memes referencing public figures accused of such acts where the joke is unrelated to their professional work - falls under this rule.</li>
+          </ol>
+        </article>
+
+        <article id="rule-1-2">
+          <h3><span class="num">1.2</span>Inclusivity &amp; hateful conduct</h3>
+          <p>Diversity and inclusion are core community standards. Harassment, exclusion, microaggressions, or invalidating someone’s identity (including gender identity and sexual orientation) are treated as severe violations.</p>
+          <ol>
+            <li>Hate speech, hate mongering, and hateful imagery are prohibited.</li>
+            <li>Negative stereotyping, bigotry, slurs, or prejudiced comments based on race, ethnicity, place of birth, language, state, country, gender, sexual orientation, religion, caste, or physical appearance are prohibited.</li>
+            <li>Coded language or dog-whistling targeting anyone is prohibited.</li>
+            <li>Disparaging jokes about sexual orientation, gender, or sex are held to a stricter standard than other jokes: content that is even mildly offensive on these grounds can result in a lengthy timeout or a ban, regardless of intent. Not understanding why a joke landed badly is not a defense - see Rule 9 for how to raise a disagreement with a moderation call.</li>
+            <li>Do not mock any religious figure, particularly to troll. This does not extend to modern-day public figures who claim godhood.</li>
+          </ol>
+        </article>
+
+        <article id="rule-1-3">
+          <h3><span class="num">1.3</span>Remember the human. Be polite.</h3>
+          <p>Read the <a href="https://support.reddithelp.com/hc/en-us/articles/205926439" target="_blank" rel="noopener noreferrer">Reddiquette</a> and try to keep your content positive - the same standard of courtesy applies on Discord.</p>
+          <ol>
+            <li>Respect fellow users and treat them with dignity and empathy. Don't be unnecessarily rude, hostile, or impolite.</li>
+            <li>Do not abuse other users - harmful tropes, personal attacks, name-calling, shill allegations, and ad-hominem attacks are all prohibited regardless of context. Do not dehumanise or degrade anyone.</li>
+            <li>You don't need to retaliate when people abuse you. Report rule-violating content instead of engaging with it - "they started it" is not a valid excuse.</li>
+          </ol>
+        </article>
+
+        <article id="rule-1-4">
+          <h3><span class="num">1.4</span>Harassment &amp; bullying</h3>
+          <p>Harassment and bullying are strictly prohibited. Do not behave in a creepy or predatory manner towards other users. Overtly predatory or creepy DMs require no prior warning and are met with an immediate ban; other unsolicited contact constitutes harassment once it persists after being asked to stop.</p>
+        </article>
+      </section>
+
+      <section id="rule-2">
+        <h2>Rule 2 - Do not cause disruption in r/CBSE</h2>
+
+        <article id="rule-2-1">
+          <h3><span class="num">2.1</span>Respect the community environment</h3>
+          <p>Maintain a healthy environment. Content that seems detrimental to the health of r/CBSE may be removed at moderator discretion (severity determines whether this is a removal-only action or escalates further, per the enforcement section above).</p>
+          <ol>
+            <li>Do not submit anything that discourages people from expressing themselves or diminishes the value of conversation.</li>
+            <li>Do not submit propaganda.</li>
+            <li>Stick to the discussion at hand - do not derail conversations with off-topic comments.</li>
+            <li>Do not attempt to farm karma.</li>
+          </ol>
+        </article>
+
+        <article id="rule-2-2">
+          <h3><span class="num">2.2</span>Content manipulation</h3>
+          <ol>
+            <li>Vote manipulation and ban evasion are prohibited. Submissions from an account found to be evading a ban will be removed and the account may be banned again; to request reinstatement of the original account instead, contact the moderators with your original username.</li>
+            <li>Impersonation, or use of any deceptive identity, is prohibited. This does not cover parody accounts or impersonation of fictional identities.</li>
+            <li>Calls for brigading or witch-hunting are prohibited. This cuts both ways: if a group of r/CBSE users is found to have raided or caused disruption in another subreddit or Discord server, everyone involved is susceptible to a ban here too, regardless of where the raid took place.</li>
+            <li>Circumventing <code>AutoModerator</code> is prohibited - this includes posting modified versions of words that violate the filter, and sending screenshots of deleted messages. Screenshots are allowed only when the message was harmless and the removal was a false flag.</li>
+          </ol>
+        </article>
+
+        <article id="rule-2-3">
+          <h3><span class="num">2.3</span>Spam &amp; trolling</h3>
+          <ol>
+            <li>Inflammatory, baiting, or provocative content may be removed depending on intensity.</li>
+            <li>Do not flood the community by link-dumping or posting in rapid succession. r/CBSE may place time limits on posting; low-effort or low-quality posts may also be removed regardless of frequency. Excessive emoji or GIF posting on Discord may fall under this rule.</li>
+            <li>Malicious links (especially bot-posted ones) or attempts to create fake engagement are prohibited and will be removed.</li>
+            <li>Trolling is prohibited.</li>
+          </ol>
+        </article>
+
+        <article id="rule-2-4">
+          <h3><span class="num">2.4</span>Real-life disruption</h3>
+          <p>What is online should remain online. Do not submit content that may cause actual disruption (e.g. organising a protest or inviting people to an event through the community). Users engaging in such activity face immediate bans.</p>
+        </article>
+
+        <article id="rule-2-5">
+          <h3><span class="num">2.5</span>No CFBR</h3>
+          <p>"Commenting for better reach" threads will be purged, with a strike issued to the poster.</p>
+        </article>
+      </section>
+
+      <section id="rule-3">
+        <h2>Rule 3 - Uphold the relevance and quality of content</h2>
+
+        <article id="rule-3-1">
+          <h3><span class="num">3.1</span>Relevance</h3>
+          <ol>
+            <li>Restrictions on topic are loose, but all submissions should be relevant to academia or schooling. This is a guideline more than a hard rule, and may only be occasionally enforced depending on content.</li>
+            <li>On Discord, use the appropriate channel for the topic. This is loosely enforced, but users are expected to cooperate when a moderator asks them to move to a specific channel.</li>
+          </ol>
+        </article>
+
+        <article id="rule-3-2">
+          <h3><span class="num">3.2</span>Quality - don't shitpost</h3>
+          <ol>
+            <li>Self-posts and media must be descriptive enough, and not of poor quality. Random videos with little to no explanation, or text posts of only two or three words, are examples of unacceptable posts and will be removed.</li>
+            <li>All posts should make a meaningful contribution to r/CBSE.</li>
+          </ol>
+        </article>
+
+        <article id="rule-3-3">
+          <h3><span class="num">3.3</span>Reposts</h3>
+          <p>Search or sort by new before posting to check whether your topic is already being discussed.</p>
+          <ol>
+            <li>Reposts of already-posted links, or another link containing the same information, will be removed - between the original and the repost, moderators keep whichever has the most engagement, defaulting to the older post in a tie.</li>
+            <li>Reddit or network glitches sometimes create duplicate posts and comments; only one will be kept.</li>
+            <li>If there are multiple posts on the same topic and one has new information, use the comments of the original post instead of a new one - though new links may or may not be removed depending on how much new information is added. Contact moderators to request a megathread for a constantly updating topic. Exceptions may be granted for major topics affecting a large number of people.</li>
+          </ol>
+        </article>
+
+        <article id="rule-3-4">
+          <h3><span class="num">3.4</span>Old content</h3>
+          <p>Do not mislead people with old notices or outdated information.</p>
+        </article>
+
+        <article id="rule-3-5">
+          <h3><span class="num">3.5</span>Trends</h3>
+          <p>r/CBSE occasionally allows "trends" - posts unrelated to CBSE that multiple people make - because they keep the community engaging, but they become redundant after a few days. Trends are inherently limited and expire: once one has run its course, or starts crowding out real CBSE discussion, it's no longer welcome, whether or not a moderator has formally called it out.</p>
+        </article>
+      </section>
+
+      <section id="rule-4">
+        <h2>Rule 4 - Keep the prohibited content in mind</h2>
+
+        <article id="rule-4-1">
+          <h3><span class="num">4.1</span>PII, intimate &amp; illegal media</h3>
+          <ol>
+            <li>Doxxing is strictly prohibited. PII (personally identifiable or confidential information) includes unique/full name, location, email/phone, passwords, social media handles, or any data that can identify a specific person, and requires their consent to share. Public figures are an exception.</li>
+            <li>Posting intimate media (pictures, videos, etc.) without consent is strictly prohibited. This is enforced especially strictly where minors are involved, and anyone submitting such content will be banned and reported immediately.</li>
+            <li>Posting or participating in transactions related to illegal content, such as drugs, is not allowed and may be removed. This does not cover discussion of topics involving illegal content.</li>
+          </ol>
+        </article>
+
+        <article id="rule-4-2">
+          <h3><span class="num">4.2</span>Explicit or discomfiting media</h3>
+          <p>This rule covers all adult content, as well as graphically disturbing media such as hard violence.</p>
+          <ol>
+            <li>No pornographic submissions, or any other arousing or fictional NSFW content such as erotica, regardless of medium. This is strictly prohibited, and users may be temporarily banned or warned depending on intensity.</li>
+            <li>Sharing sexual fantasies or fetishes, in any form, is not permitted - this applies even where everyone participating in a conversation is comfortable with it. The purpose of this community is academic and social support, not a space for that kind of content.</li>
+            <li>Content involving extreme gore must be blurred, and may be removed in some cases. Mark all other NSFW or NSFL content. This is handled at moderator discretion, with the community's general age group kept in mind.</li>
+            <li>Casual discussion of adult topics is allowed at moderator discretion; content that's extremely inappropriate is more likely to be removed.</li>
+          </ol>
+        </article>
+
+        <article id="rule-4-3">
+          <h3><span class="num">4.3</span>Self-promotion</h3>
+          <p>All promotion - advertisements, surveys, self-promotion of paid or free products/services, etc. - must be verified beforehand through ModMail. Unverified promotional content will be removed immediately; posting it again after a decline results in stricter action.</p>
+        </article>
+
+        <article id="rule-4-4">
+          <h3><span class="num">4.4</span>Fundraisers &amp; surveys</h3>
+          <p>Send a ModMail and get approval before posting either of the following:</p>
+          <ol>
+            <li>Fundraisers, especially those involving third-party payment methods or crowdfunding apps. All fundraisers need approval through ModMail; those for health conditions get a lighter check, but must still provide clear, verifiable information.</li>
+            <li>Surveys, or any links requesting user data, must be verified in advance or will be removed.</li>
+          </ol>
+        </article>
+
+        <article id="rule-4-5">
+          <h3><span class="num">4.5</span>Political or religious discussion</h3>
+          <ol>
+            <li>Discussion of mainstream politics, religious politics, gender politics, or other inflammatory political topics that are detrimental to community health is closely monitored, since these tend to spark unhealthy conflict, and will mostly be removed. It's approved only in exceptional cases, where the discussion stays healthy.</li>
+            <li>Discussion of politics as it relates to syllabus content is handled at moderator discretion, depending on the value it adds to r/CBSE.</li>
+            <li>Casual references to organised religion (e.g. "May [X] bless you for this exam") are allowed, but a thread will be locked if it turns into a religious debate. Casual comments about festivals are fine.</li>
+          </ol>
+        </article>
+      </section>
+
+      <section id="rule-5">
+        <h2>Rule 5 - Follow the language policy</h2>
+        <p>All languages spoken in India are allowed on r/CBSE. Users are asked to cooperate with anyone who doesn't understand their language by offering translations - this is mandatory if a moderator asks for one.</p>
+      </section>
+
+      <section id="rule-6">
+        <h2>Rule 6 - Use good titles and appropriate flair</h2>
+
+        <article id="rule-6-1">
+          <h3><span class="num">6.1</span>Titling rules</h3>
+          <p>Your title must accurately and completely describe what your post is about. This applies to all post types - for a help post, "Help Needed" is not an acceptable title; mention the subject, the chapter, and basic details of the question instead.</p>
+        </article>
+
+        <article id="rule-6-2">
+          <h3><span class="num">6.2</span>Flair &amp; roles</h3>
+          <p>Users are encouraged to use Reddit's user flairs. On Discord, users must not larp in identity roles - for class and pronoun roles, select only the ones that genuinely fit you.</p>
+        </article>
+      </section>
+
+      <section id="rule-7">
+        <h2>Rule 7 - Follow the rules around discussion of social media content</h2>
+
+        <article id="rule-7-1">
+          <h3><span class="num">7.1</span>Meta content</h3>
+          <blockquote><p>A meta post is a self-referential post about the community, its users, or its operation. Meta-drama includes posts about being banned, or discussion of moderators or moderation policy.</p></blockquote>
+          <ol>
+            <li>Slight meta references to r/CBSE are allowed.</li>
+            <li>Feedback for r/CBSE should be sent only via ModMail or monthly meta threads; posts or messages raising it elsewhere may be removed.</li>
+            <li>Discussion of, or self-referential posts about, past incidents or happenings that are likely to reopen a conflict - because they're opinionated or otherwise inflammatory - is prohibited. Users may face consequences for starting or engaging in this kind of discussion, depending on the severity of the topic.</li>
+            <li>Anti-brigading: when linking to a post from another subreddit for any reason, use <code>NP</code> or non-participation links; replace www.reddit.com with np.reddit.com.</li>
+            <li>Personal attacks or grudge-driven callouts aimed at moderators or community executives are prohibited, at moderator discretion - even where the user has a genuine personal grievance. Disagree with a moderation call through the appeal process (Rule 9); going after the person who made it, rather than the decision, is treated as harassment under this rule regardless of how justified the grudge feels.</li>
+            <li>Community branding &amp; announcements: Community iconography, server icons, profile pictures, banners, and announcements represent the core values and editorial discretion of r/CBSE. Bad-faith questioning, complaining, trolling, or instigating debates regarding server themes, branding, or awareness and solidarity announcements is prohibited and will be removed immediately without discussion.</li>
+          </ol>
+        </article>
+
+        <article id="rule-7-2">
+          <h3><span class="num">7.2</span>Other social media content</h3>
+          <p>Content from other social media - Instagram, Facebook, WhatsApp, Quora, LinkedIn, X/Twitter, etc. - is handled at moderator discretion.</p>
+        </article>
+      </section>
+
+      <section id="rule-8">
+        <h2>Rule 8 - Do not spread misinformation</h2>
+
+        <article id="rule-8-1">
+          <h3><span class="num">8.1</span>Fact-check claims before submitting</h3>
+          <p>Before posting news, circulars, exam dates, syllabus changes, or official updates, verify them via official CBSE portals (<code>cbse.gov.in</code>) or accredited news publications. Do not share unsubstantiated rumors or unverified hearsay that create confusion or academic panic.</p>
+        </article>
+
+        <article id="rule-8-2">
+          <h3><span class="num">8.2</span>Back up claims with valid data, and cite a source for all media</h3>
+          <p>Submissions claiming changes to grading criteria, paper leaks, datesheet releases, or exam cancellations must include direct links to verifiable official sources. Screenshots of circulars or notices must clearly display official signatures, circular numbers, and dates. Unverified or doctored media will be removed promptly.</p>
+        </article>
+      </section>
+
+      <section id="rule-9">
+        <h2>Rule 9 - Appeals</h2>
+        <p>To appeal a moderation decision, open a ticket via <a href="https://discord.com/channels/1123120163991060691/1170782600831442985" target="_blank" rel="noopener noreferrer"><code>#support-ticket</code></a> (Discord channel; you must <a href="https://discord.gg/zkphtqqSdG" target="_blank" rel="noopener noreferrer">join the server</a> first) or via <a href="https://www.reddit.com/message/compose?to=r/CBSE" target="_blank" rel="noopener noreferrer">Modmail</a> on Reddit. Include the content in question and why you believe the action was mistaken; a moderator will review and respond.</p>
+      </section>
+
+      <footer class="content-foot">
+        r/CBSE Moderators
+      </footer>
+    </main>
+
+    <aside class="aside" id="aside">
+      <div class="aside-sec">
+        <p class="aside-title">Community</p>
+        <a href="https://reddit.com/r/CBSE" target="_blank" rel="noopener noreferrer">r/CBSE <span id="redditStat">427k</span></a>
+        <a href="https://discord.gg/zkphtqqSdG" target="_blank" rel="noopener noreferrer">Discord <span id="discordStat">8.2k</span></a>
+        <a href="https://www.reddit.com/message/compose?to=r/CBSE" target="_blank" rel="noopener noreferrer">ModMail</a>
+        <a href="https://discord.com/channels/1123120163991060691/1170782600831442985" target="_blank" rel="noopener noreferrer">#support-ticket <span>join discord first</span></a>
+      </div>
+
+      <div class="aside-sec">
+        <p class="aside-title">Official CBSE Portals</p>
+        <a href="https://cbse.gov.in" target="_blank" rel="noopener noreferrer">cbse.gov.in <span>main</span></a>
+        <a href="https://cbseacademic.nic.in" target="_blank" rel="noopener noreferrer">cbseacademic.nic.in <span>curriculum</span></a>
+      </div>
+    </aside>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
